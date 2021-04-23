@@ -9,9 +9,13 @@
     Node 'localhost' {
 
         # The Service Resource 
-        Service "Spooler:Running" {
-            Name = "Spooler"
+        Service "StartBits" {
+            Name = "bits"
             State = "Running"
         }
     }
 }
+ServiceSample
+Start-DscConfiguration -Path .\ServiceSample -Wait -Verbose
+
+## Start of toLab Branch
