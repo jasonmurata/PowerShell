@@ -9,8 +9,8 @@
 
         # The File resource can ensure the state of files, or copy them from a
         # source to a destination with persistent updates.
-        File HelloWorld {
-            DestinationPath = "C:\Temp\HelloWorld.txt"
+        File HWFile {
+            DestinationPath = "C:\DSC\HelloWorld.txt"
             Ensure = "Present"
             Contents   = "Hello World from DSC!"
         }
